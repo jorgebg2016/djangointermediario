@@ -1,0 +1,15 @@
+Informações do modulo django.forms:
+
+['ALL_FIELDS', 'BaseForm', 'BaseFormSet', 'BaseInlineFormSet','BaseModelForm','BaseModelFormSet',
+'BooleanField','BoundField','CharField','CheckboxInput','CheckboxSelectMultiple','ChoiceField',
+ 'ClearableFileInput','ComboField','DateField','DateInput','DateTimeField','DateTimeInput',
+ 'DecimalField','DurationField','EmailField','EmailInput','Field','FileField','FileInput','FilePathField',
+ 'FloatField','Form','GenericIPAddressField','HiddenInput','ImageField','IntegerField','Media','MediaDefiningClass',
+ 'ModelChoiceField','ModelForm','ModelMultipleChoiceField','MultiValueField','MultiWidget','MultipleChoiceField',
+ 'MultipleHiddenInput','NullBooleanField','NullBooleanSelect','NumberInput','PasswordInput','RadioSelect',
+ 'RegexField','Select','SelectDateWidget','SelectMultiple','SlugField','SplitDateTimeField','SplitDateTimeWidget',
+ 'SplitHiddenDateTimeWidget','TextInput','Textarea','TimeField','TimeInput','TypedChoiceField','TypedMultipleChoiceField',
+ 'URLField','URLInput','UUIDField','ValidationError','Widget','__builtins__','__cached__','__doc__','__file__','__loader__',
+ '__name__','__package__','__path__','__spec__','all_valid','boundfield','fields','fields_for_model','forms','formset_factory',
+ 'formsets','inlineformset_factory','model_to_dict','modelform_factory','modelformset_factory','models','renderers',
+ 'utils','widgets']
