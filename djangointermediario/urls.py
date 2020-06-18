@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+from django.conf.urls.static import static
+from django.conf import settings
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('base2.urls')) # Para qualquer rota que não for admin, inclua as rotas da aplicação 'base2' do modulo 'urls.py'
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT) # Utiliza-se para poder fazer acesso nos templates
+# aos arquivos de midia utilizados no uploud

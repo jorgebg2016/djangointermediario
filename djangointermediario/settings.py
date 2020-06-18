@@ -128,3 +128,22 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles') #coleta todos os arquivos estaticos
 #da nossa aplicação e colca dentro de 'staticfiles'
+MEDIA_URL = 'media/' # Utiliza esse diretorio para fazer uploud de arquivos de midia
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# ________Configuração de E-mail____________: --- Usado no desenvolvimento
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# Essa configuração infora ao django que, embora não tendo um servidor de E-mail, o 
+# Django deve deixar a aplicação pronta para e-mails, para quando ela tiver um servidor de e-mails.
+# Isto é, o Django simula que está recebendo um e-mail e printa-o no console. Se o envio do e-mail funcionar, 
+# se o django printar no console, quer dizer que a aplicação está pronta para receber um servidor de e-mails
+
+
+# _________Configuração para quando tivermos um servidor de e-mails____________: --- Usado na produção
+"""
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_USER = 'no-replay@seudominio.com.br'  ---# E-mail usado geralmente para se conectar ao servidor de e-mails
+EMAIL_PORT = 587   ---# Se for conexão segura, geralmente será '587'
+EMAIL_USER_TLS = True   ---# Se vai utilizar criptografia ou não, mas geralmente sim
+EMAIL_HOST_PASSWORD = 'sua-senha'   ---# Senha do email 'no-replay'
+"""
